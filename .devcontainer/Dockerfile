@@ -1,4 +1,7 @@
-FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
+# Dockerfile for Rust development environment
+# See https://github.com/devcontainers/images/tree/main/src/rust
+#FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
+FROM mcr.microsoft.com/devcontainers/rust:2-1-trixie
 
 # Include lld linker to improve build times either by using environment variable
 # RUSTFLAGS="-C link-arg=-fuse-ld=lld" or with Cargo's configuration file (i.e see .cargo/config.toml).
